@@ -9,5 +9,27 @@
 
 <body>
     <h1>Homepage</h1>
+
+    <!-- An anchor tag can be used to link to any resource on the internet, -->
+    <!-- mostly HTML documents but also videos, pdfs and images. -->
+    <!-- An HTML attribute is needed for the anchor tag to link and is included in the opening anchor tag. -->
+    <!-- The HTML attribute comprises a href (hyperlink reference) and a value (the destination) -->
+    <a href="https://www.theodinproject.com/about">click me</a>
+    <!-- The above is an example of an absolute link: -->
+    <!-- it must contain the protocol and domain to be able to link to other websites-->
+
+    <!-- <a href="about.html">About</a> -->
+    <!-- The above is an example of a relative link:-->
+    <!-- it does'nt contain the protocol and domain, -->
+    <!-- assumption being that the destination  is within the same website and has the same domain-->
+    <!-- Only contains file path to the resource relative to the page that you are in -->
+   
+    <!-- Best Practice is to house index.html in root and other HTML files in own directory -->
+    <!-- about.html has been moved to the pages directory and the path updated below -->
+    <!-- <a href="pages/about.html">About</a> -->
+    
+    <!-- Although the updated link above may work, adding ./ ensures that -->
+    <!-- the search for the file directory starts relative to the current directory -->
+    <a href="./pages/about.html">About</a>
 </body>
 </html>
